@@ -1,0 +1,20 @@
+﻿@*@page
+@model Plagecon.Views.Blog.IndexModel
+@{
+}*@
+
+
+@{ 
+    var x = ViewData["BlogData"] as BlogPosts;
+}
+
+
+<h1>@ViewData["Title"]</h1>
+
+@* POCO aqui um exmeplo de POCO CLASSES = PLAIN OLD CLR OBJECTS são classes normais sem dependencia, ou qualquer framework:: não entendi *@
+
+<div class="=text-center">
+    Title: @x.Title <br/>
+    Description: @x.Description<br />
+    Create Date:  @x.CreatedOn<br />
+</div>>
